@@ -60,9 +60,9 @@ public class Reservation {
 		sb.append("Reservation: Room ");
 		sb.append(getRoomNumber());
 		sb.append(", Check-in: ");
-		sb.append(getCheckIn());
+		sb.append(sdf.format(getCheckIn()));
 		sb.append(", Check-Out: ");
-		sb.append(getCheckOut());
+		sb.append(sdf.format(getCheckOut()));
 		sb.append(String.format(", %d nights;", duration()));
 		return sb.toString();
 	}
